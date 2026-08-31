@@ -256,15 +256,6 @@ class SelfLauncherManager(
         const val AA_PACKAGE = "com.google.android.projection.gearhead"
     }
 
-    fun stopSelfMode() {
-        AppLog.i("SelfMode: stopping Self Mode session")
-        isActive = false
-        clearLaunchInFlight()
-        stopDummyVpnWatchdog()
-        val commManager = App.provide(service).commManager
-        if (commManager.isConnected || commManager.connectionState.value is CommManager.ConnectionState.Connecting) {
-            commManager.disconnect(sendByeBye = true)
-        }
-    }
+
 
 }

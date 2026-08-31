@@ -281,7 +281,6 @@ class AapService : Service() {
     private val commManager get() = App.provide(this).commManager
 
     fun isSelfModeActive() = selfLauncherManager.isActive
-    fun stopSelfMode() = selfLauncherManager.stopSelfMode()
 
     fun updateMediaSessionState(isPlaying: Boolean) {
         mediaSessionIsPlaying = isPlaying
@@ -1990,15 +1989,8 @@ class AapService : Service() {
         instanceRef?.clear()
         instanceRef = null
         if (killProcessOnDestroy) {
-            AppLog.i("AapService: killProcessOnDestroy requested. Finishing app tasks safely.")
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                try {
-                    val activityManager = getSystemService(Context.ACTIVITY_SERVICE) as android.app.ActivityManager
-                    activityManager.appTasks.forEach { it.finishAndRemoveTask() }
-                } catch (e: Exception) {
-                    AppLog.w("AapService: Error finishing tasks on destroy: ${e.message}")
-                }
-            }
+            AppLog.i("AapService: killProcessOnDestroy requested. Exiting process.")
+            System.exit(0)
         }
     }
 

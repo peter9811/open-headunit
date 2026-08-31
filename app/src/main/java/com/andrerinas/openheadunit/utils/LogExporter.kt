@@ -414,9 +414,38 @@ object LogExporter {
         context.startActivity(chooser)
     }
 
+    const val MAX_CLIPBOARD_BYTES: Long = 500 * 1024L // 500 KB limit for Binder IPC safety
+
+    /**
+     * Reads log text for clipboard copy, truncating large log files to the most recent ~500 KB
+     * (the tail of the log) to prevent TransactionTooLargeException.
+     */
+    fun getClipboardLogText(file: File, maxBytes: Long = MAX_CLIPBOARD_BYTES): String {
+        if (!file.exists() || file.length() == 0L) return ""
+        val fileLength = file.length()
+        if (fileLength <= maxBytes) {
+            return file.readText()
+        }
+
+        val overflowKb = fileLength / 1024L
+        val notice = "[Log truncated: showing last ${maxBytes / 1024L} KB of ${overflowKb} KB log]\n\n"
+        val bytesToRead = maxBytes.toInt()
+        val buffer = ByteArray(bytesToRead)
+
+        java.io.RandomAccessFile(file, "r").use { raf ->
+            raf.seek(fileLength - bytesToRead)
+            raf.readFully(buffer)
+        }
+
+        val rawTail = String(buffer, Charsets.UTF_8)
+        val cleanTail = if (rawTail.contains("\n")) rawTail.substringAfter("\n") else rawTail
+        return notice + cleanTail
+    }
+
     fun copyLogToClipboard(context: Context, file: File): Boolean {
         return try {
-            val text = file.readText()
+            val text = getClipboardLogText(file)
+            if (text.isEmpty()) return false
             val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE) as android.content.ClipboardManager
             val clip = android.content.ClipData.newPlainText("Open Headunit Log", text)
             clipboard.setPrimaryClip(clip)

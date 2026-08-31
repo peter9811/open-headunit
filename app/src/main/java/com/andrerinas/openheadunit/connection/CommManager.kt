@@ -579,11 +579,7 @@ class CommManager(
                 }
                 com.andrerinas.openheadunit.aap.AapService.killProcessOnDestroy = true
                 context.stopService(stopIntent)
-                // Finish all tasks (API 21+)
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    val activityManager = context.getSystemService(Context.ACTIVITY_SERVICE) as android.app.ActivityManager
-                    activityManager.appTasks.forEach { it.finishAndRemoveTask() }
-                }
+
             }, 500)
         }
     }
@@ -855,11 +851,7 @@ class CommManager(
                 }
                 com.andrerinas.openheadunit.aap.AapService.killProcessOnDestroy = true
                 context.stopService(stopIntent)
-                // Finish all tasks (API 21+)
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    val activityManager = context.getSystemService(Context.ACTIVITY_SERVICE) as android.app.ActivityManager
-                    activityManager.appTasks.forEach { it.finishAndRemoveTask() }
-                }
+
             }, 500)
         }
     }
