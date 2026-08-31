@@ -940,6 +940,10 @@
     <string name="rename_notice_title">Notre nom change pour Open Headunit</string>
     <string name="rename_notice_message">Headunit Revived grandit, grâce à toi, et devient un projet à part entière : Open Headunit. Nous déployons le nouveau nom au fil des prochaines mises à jour, tu verras donc peut-être encore l\'ancien nom à certains endroits pendant un moment.\n\nMême application, mêmes personnes derrière, et tous tes paramètres restent exactement comme ils sont.</string>
     <string name="rename_notice_button">Compris</string>
+    <string name="aa174_notice_title">Avis important : Android Auto 17.4+</string>
+    <string name="aa174_notice_message">À partir d’Android Auto 17.4, Google a apporté des modifications internes qui désactivent le lancement automatique via Wireless Helper ainsi que le Self-Mode classique.<br/><br/><b>Solutions disponibles :</b><br/><br/><b>1. Headunit Server (Mode développeur) :</b><br/>La seule solution restante pour le Self-Mode ! Sur votre téléphone, ouvrez les paramètres développeur d’Android Auto et appuyez sur "Démarrer le serveur de l’unité principale".<br/><br/><b>2. Mode natif :</b><br/>Se connecte directement via Wi-Fi Direct ou le point d’accès de l’unité.<br/><br/><b>3. Adaptateur USB sans fil :</b><br/>Un dongle USB sans fil offre la meilleure stabilité.<br/><br/><b>4. Wireless Helper :</b><br/>Continue de fonctionner de manière fiable pour Android Auto jusqu’à la version 17.3.</string>
+    <string name="aa174_notice_button_confirm">Compris</string>
+    <string name="aa174_notice_button_guide">Ouvrir le guide</string>
 
     <!-- Auto-added missing translations -->
     <string name="blacklisted">Bloqué (Liste noire)</string>
@@ -964,6 +968,20 @@
     <string name="btn_color_wifi">Bouton Wi-Fi</string>
     <string name="btn_color_settings">Bouton Paramètres</string>
     <string name="btn_reset_colors">Réinitialiser toutes les couleurs</string>
+    <string name="btn_make_all_monochrome">Passer tous les boutons en monochrome</string>
+    <string name="auto_monochrome_at_night">Passer en monochrome la nuit</string>
+    <string name="auto_monochrome_at_night_description">Bascule les boutons colorés en gris discret en mode sombre pour réduire l\'éblouissement en conduisant</string>
+    <string name="bg_night_behavior_title">Arrière-plan la nuit</string>
+    <string name="bg_night_behavior_description">Définit l\'affichage de l\'arrière-plan lorsque le mode sombre est activé</string>
+    <string name="bg_night_behavior_dim">Atténuer (50 %)</string>
+    <string name="bg_night_behavior_pure_black">Noir pur (OLED)</string>
+    <string name="bg_night_behavior_none">Inchangé</string>
+    <string name="bg_style_title">Style d\'arrière-plan</string>
+    <string name="bg_style_description">Choisissez l\'apparence de l\'arrière-plan si aucune image personnalisée n\'est utilisée</string>
+    <string name="bg_type_standard">Par défaut (Bleu classique)</string>
+    <string name="bg_type_gradient">Dégradé</string>
+    <string name="bg_type_pure_black">Noir pur (OLED)</string>
+    <string name="bg_type_custom">Image personnalisée</string>
     <string name="pick_color_title">Choisir la couleur du bouton</string>
     <string name="color_preset_default">Par défaut</string>
     <string name="color_custom_hex">Couleur Hex</string>

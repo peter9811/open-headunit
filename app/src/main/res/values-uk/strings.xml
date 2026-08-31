@@ -822,6 +822,10 @@
     <string name="rename_notice_title">Наша назва змінюється на Open Headunit</string>
     <string name="rename_notice_message">Headunit Revived росте завдяки вам і стає чимось своїм: Open Headunit. Нову назву ми впроваджуємо поступово, упродовж наступних оновлень, тож якийсь час у деяких місцях ви ще можете бачити стару назву.\n\nТой самий застосунок, ті самі люди за ним, і всі ваші налаштування залишаються точно такими, як є.</string>
     <string name="rename_notice_button">Зрозуміло</string>
+    <string name="aa174_notice_title">Важливе повідомлення: Android Auto 17.4+</string>
+    <string name="aa174_notice_message">Починаючи з Android Auto 17.4, Google внесла зміни, які блокують автозапуск через Wireless Helper і класичний режим Self-Mode.<br/><br/><b>Доступні рішення:</b><br/><br/><b>1. Headunit Server (режим розробника):</b><br/>Єдине робоче рішення для Self-Mode! На телефоні відкрийте налаштування розробника Android Auto та виберіть "Запустити сервер головного пристрою".<br/><br/><b>2. Нативний режим:</b><br/>Підключення напряму через Wi-Fi Direct або точку доступу.<br/><br/><b>3. Бездротовий USB-адаптер:</b><br/>Апаратний USB-адаптер забезпечує найстабільнішу роботу.<br/><br/><b>4. Wireless Helper:</b><br/>Надійно працює для версій Android Auto до 17.3 включно.</string>
+    <string name="aa174_notice_button_confirm">Зрозуміло</string>
+    <string name="aa174_notice_button_guide">Відкрити інструкцію</string>
 
     <string name="onb_vehicle_help_sideload">Picking a real car brand also shows that brand\'s logo on the Android Auto exit button, but Android Auto then stops listing apps you installed from outside the Play Store. Keep \"Google\" or \"Open Headunit\" if you use those apps.</string>
     <string-array name="vehicle_brands">
@@ -914,6 +918,20 @@
     <string name="btn_color_wifi">Кнопка WiFi</string>
     <string name="btn_color_settings">Кнопка Налаштувань</string>
     <string name="btn_reset_colors">Скинути всі кольори кнопок</string>
+    <string name="btn_make_all_monochrome">Зробити всі кнопки монохромними</string>
+    <string name="auto_monochrome_at_night">Вночі автоматично перемикати на монохромний</string>
+    <string name="auto_monochrome_at_night_description">Перемикає кольорові кнопки на стриманий сірий у темному режимі, щоб зменшити відблиски за кермом</string>
+    <string name="bg_night_behavior_title">Фон уночі</string>
+    <string name="bg_night_behavior_description">Визначає вигляд фону, коли активний темний режим</string>
+    <string name="bg_night_behavior_dim">Затемнити (50%)</string>
+    <string name="bg_night_behavior_pure_black">Чистий чорний (OLED)</string>
+    <string name="bg_night_behavior_none">Без змін</string>
+    <string name="bg_style_title">Стиль фону</string>
+    <string name="bg_style_description">Виберіть вигляд фону, якщо власне зображення не використовується</string>
+    <string name="bg_type_standard">За замовчуванням (Класичний синій)</string>
+    <string name="bg_type_gradient">Градієнт</string>
+    <string name="bg_type_pure_black">Чистий чорний (OLED)</string>
+    <string name="bg_type_custom">Власне зображення</string>
     <string name="pick_color_title">Вибрати колір кнопки</string>
     <string name="color_preset_default">За замовчуванням</string>
     <string name="color_custom_hex">Hex-код кольору</string>

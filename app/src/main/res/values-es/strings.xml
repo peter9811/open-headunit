@@ -829,6 +829,10 @@
     <string name="rename_notice_title">Nuestro nombre está cambiando a Open Headunit</string>
     <string name="rename_notice_message">Headunit Revived está creciendo, gracias a ustedes, y se está convirtiendo en algo propio: Open Headunit. Vamos a ir cambiando al nuevo nombre en las próximas actualizaciones, así que es posible que sigas viendo el nombre anterior en algunos lugares por un tiempo.\n\nLa misma app, la misma gente detrás, y todos tus ajustes se quedan exactamente como están.</string>
     <string name="rename_notice_button">Entendido</string>
+    <string name="aa174_notice_title">Aviso importante: Android Auto 17.4+</string>
+    <string name="aa174_notice_message">A partir de Android Auto 17.4, Google introdujo cambios internos que deshabilitan el inicio automático mediante Wireless Helper y el Self-Mode clásico.<br/><br/><b>Soluciones disponibles:</b><br/><br/><b>1. Headunit Server (modo desarrollador):</b><br/>¡La única solución funcional para Self-Mode! En tu teléfono, abre los ajustes de desarrollador de Android Auto y toca "Iniciar servidor de unidad principal".<br/><br/><b>2. Modo nativo:</b><br/>Conecta directamente mediante Wi-Fi Direct o punto de acceso de la unidad.<br/><br/><b>3. Adaptador inalámbrico USB:</b><br/>Un dongle USB inalámbrico ofrece la mayor estabilidad.<br/><br/><b>4. Wireless Helper:</b><br/>Sigue funcionando de forma fiable para Android Auto hasta la versión 17.3.</string>
+    <string name="aa174_notice_button_confirm">Entendido</string>
+    <string name="aa174_notice_button_guide">Abrir guía</string>
 
     <string name="onb_vehicle_help_sideload">Picking a real car brand also shows that brand\'s logo on the Android Auto exit button, but Android Auto then stops listing apps you installed from outside the Play Store. Keep \"Google\" or \"Open Headunit\" if you use those apps.</string>
     <string-array name="vehicle_brands">
@@ -921,6 +925,20 @@
     <string name="btn_color_wifi">Botón WiFi</string>
     <string name="btn_color_settings">Botón Ajustes</string>
     <string name="btn_reset_colors">Restablecer todos los colores</string>
+    <string name="btn_make_all_monochrome">Poner todos los botones en monocromo</string>
+    <string name="auto_monochrome_at_night">Cambiar a monocromo de noche</string>
+    <string name="auto_monochrome_at_night_description">Cambia los botones de colores a un gris sutil en modo oscuro para reducir el deslumbramiento al conducir</string>
+    <string name="bg_night_behavior_title">Fondo de noche</string>
+    <string name="bg_night_behavior_description">Controla cómo se muestra el fondo cuando el modo oscuro está activo</string>
+    <string name="bg_night_behavior_dim">Atenuar (50%)</string>
+    <string name="bg_night_behavior_pure_black">Negro puro (OLED)</string>
+    <string name="bg_night_behavior_none">Sin cambios</string>
+    <string name="bg_style_title">Estilo de fondo</string>
+    <string name="bg_style_description">Elige la apariencia del fondo si no se usa una imagen personalizada</string>
+    <string name="bg_type_standard">Predeterminado (Azul clásico)</string>
+    <string name="bg_type_gradient">Degradado</string>
+    <string name="bg_type_pure_black">Negro puro (OLED)</string>
+    <string name="bg_type_custom">Imagen personalizada</string>
     <string name="pick_color_title">Elegir color de botón</string>
     <string name="color_preset_default">Predeterminado</string>
     <string name="color_custom_hex">Color Hexadecimal</string>

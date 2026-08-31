@@ -792,6 +792,10 @@
     <string name="rename_notice_title">Numele nostru se schimbă în Open Headunit</string>
     <string name="rename_notice_message">Headunit Revived crește, datorită vouă, și devine ceva al său: Open Headunit. Introducem noul nume treptat, pe parcursul următoarelor actualizări, așa că e posibil să mai vezi numele vechi în unele locuri o vreme.\n\nAceeași aplicație, aceiași oameni în spatele ei, iar toate setările tale rămân exact așa cum sunt.</string>
     <string name="rename_notice_button">Am înțeles</string>
+    <string name="aa174_notice_title">Notificare importantă: Android Auto 17.4+</string>
+    <string name="aa174_notice_message">Începând cu Android Auto 17.4, Google a introdus modificări interne care dezactivează pornirea automată prin Wireless Helper și Self-Mode clasic.<br/><br/><b>Soluții disponibile:</b><br/><br/><b>1. Headunit Server (Mod dezvoltator):</b><br/>Singura soluție funcțională pentru Self-Mode! Pe telefon, deschide setările de dezvoltator Android Auto și apasă "Porniți serverul unității principale".<br/><br/><b>2. Mod Nativ:</b><br/>Se conectează direct prin Wi-Fi Direct sau hotspot-ul unității.<br/><br/><b>3. Adaptor USB wireless:</b><br/>Un dongle USB oferă cea mai stabilă conexiune.<br/><br/><b>4. Wireless Helper:</b><br/>Continuă să funcționeze stabil pentru Android Auto până la versiunea 17.3.</string>
+    <string name="aa174_notice_button_confirm">Am înțeles</string>
+    <string name="aa174_notice_button_guide">Deschide ghidul</string>
 
     <string name="onb_summary_permissions_format">Permissions: %1$d of %2$d granted</string>
     <string name="onb_ready_loading_intro">One more thing: you can now set a custom loading screen, shown while the car connects.</string>
@@ -910,6 +914,20 @@
     <string name="btn_color_wifi">Buton WiFi</string>
     <string name="btn_color_settings">Buton Setări</string>
     <string name="btn_reset_colors">Resetează toate culorile butoanelor</string>
+    <string name="btn_make_all_monochrome">Setează toate butoanele pe monocrom</string>
+    <string name="auto_monochrome_at_night">Comută automat pe monocrom noaptea</string>
+    <string name="auto_monochrome_at_night_description">Schimbă butoanele colorate într-un gri discret în modul întunecat pentru a reduce strălucirea la condus</string>
+    <string name="bg_night_behavior_title">Fundal pe timp de noapte</string>
+    <string name="bg_night_behavior_description">Controlează afișarea fundalului când modul întunecat este activ</string>
+    <string name="bg_night_behavior_dim">Estompare (50%)</string>
+    <string name="bg_night_behavior_pure_black">Negru pur (OLED)</string>
+    <string name="bg_night_behavior_none">Neschimbat</string>
+    <string name="bg_style_title">Stil fundal</string>
+    <string name="bg_style_description">Alege aspectul fundalului dacă nu se utilizează o imagine personalizată</string>
+    <string name="bg_type_standard">Implicit (Albastru clasic)</string>
+    <string name="bg_type_gradient">Degrade</string>
+    <string name="bg_type_pure_black">Negru pur (OLED)</string>
+    <string name="bg_type_custom">Imagine personalizată</string>
     <string name="pick_color_title">Alege culoarea butonului</string>
     <string name="color_preset_default">Implicit</string>
     <string name="color_custom_hex">Culoare hexazecimală</string>
